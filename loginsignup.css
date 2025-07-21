@@ -198,3 +198,67 @@ button:active{
 
 }
 
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  body {
+    margin: 5%;
+  }
+
+  .container {
+    width: 100%;
+    min-height: auto;
+    flex-direction: column;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .sign-in,
+  .sign-up,
+  .overlay-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+
+
+  }
+
+  .overlay-container {
+    display: none;
+    
+  }
+
+  .sign-in form,
+  .sign-up form {
+    padding: 20px;
+     background: linear-gradient(to right ,#28536B,#7EA8BE);
+     
+  }
+
+  input {
+    width: 90%;
+  }
+
+  button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  p,
+  a {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+}

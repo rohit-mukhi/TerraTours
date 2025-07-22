@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Incredible India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">TerraTours</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Video Hero Section -->
+<div class="video-header position-relative">
+  <video autoplay muted loop class="w-100 video-bg">
+    <source src="Assets/vid1.mp4" type="video/mp4" />
+  </video>
+  <div class="video-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
+    <h1 id="taj" class="display-4 fw-bold">Explore the Soul of India</h1>
+  </div>
+</div>
+
+<!-- Region Filter -->
+<section class="py-5 text-center bg-white" id="love-india">
+  <div class="container">
+    <h2 class="fw-bold">You'll fall in love with India !</h2>
+    <p>Explore India from Kashmir to Kanyakumari</p>
+
+    <div class="d-flex justify-content-center mt-4 flex-wrap gap-3 region-filters">
+      <span class="region active" data-region="all">ALL</span>
+      <span class="region" data-region="north">NORTH</span>
+      <span class="region" data-region="south">SOUTH</span>
+      <span class="region" data-region="east">EAST</span>
+      <span class="region" data-region="west">WEST</span>
+      <span class="region" data-region="central">CENTRAL</span>
+      <span class="region" data-region="northeast">NORTH-EASTERN</span>
+    </div>
+  </div>
+</section>
+
+<!-- Destinations -->
+<section class="py-5 bg-light" id="destinations">
+  <div class="container">
+    <h2 class="text-center mb-4">Popular Destinations</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-region="north">
+        <div class="card h-100 shadow-sm">
+          <img src="Assets/Tajmahal.webp" class="card-img-top" alt="Taj Mahal" />
+          <div class="card-body">
+            <h5 class="card-title">Taj Mahal</h5>
+            <p class="card-text">Agra, Uttar Pradesh – A timeless monument of love.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-region="south">
+        <div class="card h-100 shadow-sm">
+          <img src="Assets/Meenakshi.jpg" class="card-img-top" alt="Meenakshi Temple" />
+          <div class="card-body">
+            <h5 class="card-title">Meenakshi Temple</h5>
+            <p class="card-text">Madurai, Tamil Nadu – A masterpiece of Dravidian architecture.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-region="east">
+        <div class="card h-100 shadow-sm">
+          <img src="Assets/Jagannath.jpg" class="card-img-top" alt="Jagannath Temple" />
+          <div class="card-body">
+            <h5 class="card-title">Jagannath Temple</h5>
+            <p class="card-text">Puri, Odisha – Where divinity touches the soul.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Extraordinary Unique Experience Section -->
+<section class="py-5 bg-experience text-white" id="experiences">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Incredible Experiences in India</h2>
+    <p class="mb-5">Not just places — discover moments that stay with you forever.</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="exp-card p-3 h-100 shadow rounded bg-dark">
+          <img src="Assets/camel1.avif" class="img-fluid rounded mb-3" alt="Camel Safari" />
+          <h5>Camel Safari in Rajasthan</h5>
+          <p>Ride into the golden dunes of Jaisalmer at sunset and sleep under the stars.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="exp-card p-3 h-100 shadow rounded bg-dark">
+          <img src="Assets/Ayurveda.jpg" class="img-fluid rounded mb-3" alt="Ayurveda Kerala" />
+          <h5>Ayurveda in Kerala</h5>
+          <p>Relax and rejuvenate with ancient treatments in serene backwaters.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="exp-card p-3 h-100 shadow rounded bg-dark">
+          <img src="Assets/holi.jpg" class="img-fluid rounded mb-3" alt="Holi Festival" />
+          <h5>Festival of Colors – Holi</h5>
+          <p>Celebrate joy like never before in Vrindavan and Mathura.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-5" id="contact">
+  <div class="container text-center">
+    <h2>Contact Us</h2>
+    <p>Email: example@terratours.com</p>
+    <p>Phone: +91 </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  &copy; 2025 || All rights reserved. TerraTours.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

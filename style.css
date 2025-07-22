@@ -1,0 +1,139 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Video Section */
+.video-header {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-overlay h1 {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Region Filter */
+.region-filters .region {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
+.region-filters .region:hover {
+  color: #ffffff;
+  background-color: #6c63ff;
+}
+
+.region-filters .region.active {
+  color: #ffffff;
+  background-color: #8dc63f;
+  font-weight: bold;
+  border: 1px solid #8dc63f;
+}
+
+/* Destination Cards */
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Experience Section */
+.bg-experience {
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+}
+
+.exp-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .video-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}
